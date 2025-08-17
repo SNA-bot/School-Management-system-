@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Students</title>
+</head>
+<body>
+  <h1>Registered Students</h1>
+  <ul>
+    {% for student in students %}
+      <li>{{ student.name }} (Age: {{ student.age }}, Class: {{ student.class }})</li>
+    {% endfor %}
+  </ul>
+  <p><a href="/">Back</a></p>
+</body>
+</html>
